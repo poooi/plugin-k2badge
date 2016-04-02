@@ -1,0 +1,20 @@
+{
+  "name": "poi-plugin-k2badge",
+  "version": "0.0.1",
+  "description": "Export data to http://threebards.com/kaini",
+  "main": "index.es",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "KochiyaOcean",
+    "url": "https://github.com/KochiyaOcean"
+  },
+  "poiPlugin": {
+    "title": "Badge Generator",
+    "description": "Export data to http://threebards.com/kaini so that you can make a badge for yourself!",
+    "icon": "fa/photo",
+    "priority": 97
+  },
+  "license": "MIT"
+}
