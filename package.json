@@ -1,6 +1,6 @@
 {
   "name": "poi-plugin-k2badge",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Export data to http://threebards.com/kaini",
   "main": "index.es",
   "scripts": {
