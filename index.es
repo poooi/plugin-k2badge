@@ -13,8 +13,8 @@ let sendPost = () => {
     }
   };
   exWindow = windowManager.createWindow({
-    x: 870,
-    y: 660,
+    width: 870,
+    height: 660,
     resizable: true,
     realClose: true,
     backgroundColor: '#FFF',
