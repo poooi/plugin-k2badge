@@ -97,6 +97,7 @@ let sendPost = () => {
       document.querySelector('body').style.backgroundColor = '#FFF';
       remote = require('electron').remote;
       try {
+        $('#export').off('click');
         $("#export").on("click",
         function() {
             remote.getCurrentWebContents().downloadURL(document.getElementById("result").toDataURL())
