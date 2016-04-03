@@ -98,8 +98,7 @@ let sendPost = () => {
       remote = require('electron').remote;
       try {
         $('#export').off('click');
-        $("#export").on("click",
-        function() {
+        $("#export").on("click", function() {
             remote.getCurrentWebContents().downloadURL(document.getElementById("result").toDataURL())
         });
       }
