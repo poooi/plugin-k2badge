@@ -1,6 +1,6 @@
 const { _, $, $$, React, ReactBootstrap, FontAwesome } = window;
-const { Button, Col, Row, Grid, Input } = ReactBootstrap
-const windowManager = remote.require('./lib/window')
+const { Button, Col, Row, Grid, Input } = ReactBootstrap;
+const windowManager = remote.require('./lib/window');
 let exWindow = null;
 
 let sendPost = () => {
@@ -94,6 +94,7 @@ let sendPost = () => {
     `);
   exWindow.webContents.on('dom-ready', (e) => {
     exWindow.webContents.executeJavaScript(`
+      document.querySelector('body').style.backgroundColor = '#FFF';
       remote = require('electron').remote;
       try {
         $("#export").on("click",
@@ -103,7 +104,7 @@ let sendPost = () => {
       }
       catch (e) {
         console.log(e);
-      }
+      };
       `);
   })
   exWindow.show();
