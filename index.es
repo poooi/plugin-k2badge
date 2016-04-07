@@ -55,7 +55,7 @@ let sendPost = () => {
   let ttkLvl = _teitokuLv;
   let k2Flag = 'on'
   let colleFlag = 'on'
-  let ttkServer = 1; // todo: server detection
+  let ttkServer = window._serverId || 1;
   let postMessage = {
     ttkLvl: ttkLvl,
     ttkName: ttkName,
@@ -105,7 +105,7 @@ let sendPost = () => {
       catch (e) {
         console.log(e);
       };
-      `);
+    `);
   })
   exWindow.show();
 }
