@@ -100,10 +100,6 @@ let sendPost = () => {
         $('#export').attr('disabled', true)
         $('#save').attr('disabled', true)
         $('#load').attr('disabled', true)
-        $('#export').off('click')
-        $("#export").on("click", function() {
-            remote.getCurrentWebContents().downloadURL(document.getElementById("result").toDataURL())
-        })
       }
       catch (e) {
         console.log(e)
@@ -117,6 +113,10 @@ let sendPost = () => {
         $('#export').attr('disabled', false)
         $('#save').attr('disabled', false)
         $('#load').attr('disabled', false)
+        $('#export').off('click')
+        $("#export").on("click", function() {
+            remote.getCurrentWebContents().downloadURL(document.getElementById("result").toDataURL())
+        })
       }
       catch (e) {
         console.log(e)
