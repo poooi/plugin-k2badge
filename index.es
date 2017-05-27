@@ -72,7 +72,7 @@ let sendPost = () => {
         target.setAttribute("name", keys)
         target.setAttribute("value", postMessage[keys])
       }
-      var url = "http://threebards.com/kaini/"
+      var url = "http://www.sanya.moe/kcbadge/"
       var language = "${window.language}"
       switch (language) {
         case 'zh-CN':
