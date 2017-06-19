@@ -72,22 +72,7 @@ let sendPost = () => {
         target.setAttribute("name", keys)
         target.setAttribute("value", postMessage[keys])
       }
-      var url = "http://www.sanya.moe/kcbadge/"
-      var language = "${window.language}"
-      switch (language) {
-        case 'zh-CN':
-          url = url + "index-cn.php"
-          break
-        case 'zh-TW':
-          url = url + "index-cn.php"
-          break
-        case 'ja-JP':
-          url = url + "index-jp.php"
-          break
-        default:
-          url = url + "index.php"
-          break
-      }
+      var url = "http://www.sanya.moe/kcbadge/index.php"
       form.setAttribute("action", url)
       form.submit()
     `)
