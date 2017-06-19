@@ -1,6 +1,6 @@
 {
   "name": "poi-plugin-k2badge",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Export data to http://www.sanya.moe/kcbadge",
   "main": "index.es",
   "scripts": {
